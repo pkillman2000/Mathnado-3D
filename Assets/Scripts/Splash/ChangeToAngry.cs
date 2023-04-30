@@ -45,8 +45,6 @@ public class ChangeToAngry : MonoBehaviour
         _debrisCloudCol = _debrisCloudParticle.colorOverLifetime;
 
         _mathnadoLerpedColor = _mathnadoMellowColor;
-
-        _duration = FindObjectOfType<SplashSceneManager>().GetDurationBeforeChange();
     }
 
 

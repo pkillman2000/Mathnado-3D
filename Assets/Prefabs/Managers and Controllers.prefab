@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 7092747343683970351}
   - component: {fileID: 7581313084575684005}
   - component: {fileID: 3449323183119610977}
-  - component: {fileID: 4455021329847700201}
   - component: {fileID: 5815493191974986016}
   m_Layer: 0
   m_Name: Managers and Controllers
@@ -87,33 +86,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94a9e3325a83a9a4089caa73d179de3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &4455021329847700201
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8756968892240330779}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 919e8632554ff114287c5ad88cf4aa6f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _playerIsAI: 0000
-  _currentAvatar: 0000000000000000
-  _playerName:
-  - 
-  - 
-  _gameTypeSelected: 0
-  _mathTypeSelected: 0
-  _difficultySelected: 0
-  _numberOfLives: 
-  _duration: 
-  _numberOfQuestions: 
-  _timer: 
-  _aiIntelligence: 
-  _lowerLimit: 
-  _upperLimit: 
 --- !u!114 &5815493191974986016
 MonoBehaviour:
   m_ObjectHideFlags: 0

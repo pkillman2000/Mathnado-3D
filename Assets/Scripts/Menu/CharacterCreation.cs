@@ -114,7 +114,7 @@ public class CharacterCreation : MonoBehaviour
         _characterIsAI = !_characterIsAI;
         
         // 0 = Human, 1 = AI
-        if(_characterIsAI)
+        if(_characterIsAI) // Character is AI
         {
             _AISelectedButton.image.sprite = _AI_ActiveSprite;
             _gameSettings.SetPlayerIsAI(_playerNumber, true);

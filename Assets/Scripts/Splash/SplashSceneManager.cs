@@ -16,17 +16,7 @@ public class SplashSceneManager : MonoBehaviour
 
     void Start()
     {
-        /*
-        _screenFader = GameObject.Find("Screen Fader").GetComponent<ScreenFader>();
-        if ( _screenFader == null )
-        {
-            Debug.LogWarning("Screen Fader is Null");
-        }
-
-        _screenFader.FadeFromBlack();
-
-        StartCoroutine(FadeToBlack());
-        */
+        //FadeFromBlack();
     }
 
     public float GetDurationBeforeChange()

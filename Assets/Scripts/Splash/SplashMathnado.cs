@@ -16,9 +16,7 @@ public class SplashMathnado : MonoBehaviour
     void Start()
     {
        this.transform.position = _startPosition;
-        _duration = (FindObjectOfType<SplashSceneManager>().GetDurationBeforeChange()) - 2;
         _speed =  Vector3.Distance(_startPosition, _endPosition)/_duration;
-
     }
 
 
