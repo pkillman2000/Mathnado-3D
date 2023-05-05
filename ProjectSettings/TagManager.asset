@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Controllers
   - Scene Manager
+  - Mathnado
   layers:
   - Default
   - TransparentFX

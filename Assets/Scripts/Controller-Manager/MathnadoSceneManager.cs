@@ -28,8 +28,6 @@ public class MathnadoSceneManager : MonoBehaviour
     [SerializeField]
     private float _fadeSpeed;
 
-    private bool _isFading = false;
-
     // It is assumed that a new scene needs to be faded in to.
     private void Start()
     {

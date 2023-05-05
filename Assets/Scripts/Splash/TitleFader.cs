@@ -16,6 +16,7 @@ public class TitleFader : MonoBehaviour
     private float _fadeSpeed;
     private float _titleBlockAlpha = 0;
 
+    private bool _doneFading = false;
     void Start()
     {
         _startButton.SetActive(false); // Turn off Start Button
@@ -47,8 +48,9 @@ public class TitleFader : MonoBehaviour
         {            
             tmpColor = _titleBlockColor[i];
             
-            if(_titleBlockAlpha > 1)
+            if(_titleBlockAlpha > 1 && !_doneFading)
             {
+                _doneFading = true;
                 _titleBlockAlpha = 1;
                 _startButton.SetActive(true); // Turn on Start Button when done fading in Title
             }

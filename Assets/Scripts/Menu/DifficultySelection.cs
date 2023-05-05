@@ -25,7 +25,7 @@ public class DifficultySelection : MonoBehaviour
         SetButtonActive(0);
     }
 
-    private void SetButtonsInactive()
+    private void SetButtonsInactive() // Set all buttons to black background
     {
         for(int i = 0; i < _difficultySelectButtons.Length; i++)
         {
@@ -33,7 +33,7 @@ public class DifficultySelection : MonoBehaviour
         }
     }
 
-    public void SetButtonActive(int buttonIndex)
+    public void SetButtonActive(int buttonIndex) // Set selected button to white background
     {
         SetButtonsInactive();
         _difficultySelectButtons[buttonIndex].image.sprite = _difficultyActiveSprites[buttonIndex];

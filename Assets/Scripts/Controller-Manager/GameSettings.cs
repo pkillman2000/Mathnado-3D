@@ -24,19 +24,19 @@ public class GameSettings : MonoBehaviour
     [SerializeField]
     private int _difficultySelected;
     [SerializeField]
-    private int[] _numberOfLives;
+    private int[] _numberOfLives = new int[2];
     [SerializeField]
-    private int[] _duration;
+    private int[] _duration = new int[2];
     [SerializeField]
-    private int[] _numberOfQuestions;
+    private int[] _numberOfQuestions = new int[2];
     [SerializeField]
-    private int[] _timer;
+    private int[] _timer = new int[2];
     [SerializeField]
-    private int[] _aiIntelligence;
+    private int[] _aiIntelligence = new int[2];
     [SerializeField]
-    private int[] _lowerLimit;
+    private int[] _lowerLimit = new int[2];
     [SerializeField]
-    private int[] _upperLimit;
+    private int[] _upperLimit = new int[2];
 
     public void Awake()
     {

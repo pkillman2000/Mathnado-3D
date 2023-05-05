@@ -13,7 +13,6 @@ public class PanelController : MonoBehaviour
     [SerializeField]
     private GameObject _highScoresPanel;
 
-
     void Start()
     {
         HideAllPanels();

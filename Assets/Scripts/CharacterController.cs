@@ -13,6 +13,9 @@ public class CharacterController : MonoBehaviour
     private GameObject _character;
     private float _characterRotationSpeed;
 
+    [SerializeField]
+    private bool _canRotate = true;
+
     void Start()
     {
         // Set _character to whatever gameObject this script is attached to
@@ -23,7 +26,10 @@ public class CharacterController : MonoBehaviour
 
     void Update()
     {
-        RotateCharacter();
+        if (_canRotate)
+        {
+            RotateCharacter();
+        }
     }
 
     /* 
@@ -49,6 +55,17 @@ public class CharacterController : MonoBehaviour
                 _character.transform.GetChild(i).GetComponent<Animator>().speed = animationSpeed;
                 _character.transform.GetChild(i).GetComponent<Animator>().Play(animationName);
             }
+        }
+    }
+
+    public void SetCanRotate(bool canRotate)
+    {
+        _canRotate = canRotate;
+
+        if(!_canRotate)
+        {
+            // Rotate to front
+            _character.transform.rotation = Quaternion.Euler(0, 0, 0);
         }
     }
 
